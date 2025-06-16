@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Filtro de Array</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Filtrar Array Personalizado</h2>
+
+  <label>Ingresa los números separados por coma:</label><br />
+  <input type="text" id="inputArray" placeholder="Ej: 5,10,15,20" /><br />
+
+  <label>Condición:</label><br />
+  <select id="filterFunction">
+    <option value="greaterThan10">Mayor a 10</option>
+    <option value="even">Números pares</option>
+    <option value="positive">Solo positivos</option>
+  </select><br />
+
+  <button onclick="filtrar()">Filtrar</button>
+
+  <div class="result" id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
